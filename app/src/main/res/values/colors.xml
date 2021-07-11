@@ -6,8 +6,10 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="black_icon">#666767</color>
     <color name="white">#FFFFFFFF</color>
     <color name="sub_title_color">#DCD9D9</color>
+    <color name="home_background">#FAFAFA</color>
     <color name="blue">#6553D5</color>
     <color name="home_top_back">#8E67D5</color>
 </resources>
