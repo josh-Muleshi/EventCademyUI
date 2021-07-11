@@ -10,11 +10,7 @@
         android:name="com.example.eventcademyui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/favoriteFragment"
-        android:name="com.example.eventcademyui.FavoriteFragment"
-        android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+
     <fragment
         android:id="@+id/notificationFragment"
         android:name="com.example.eventcademyui.NotificationFragment"
@@ -25,4 +21,10 @@
         android:name="com.example.eventcademyui.ProfilFragment"
         android:label="fragment_profil"
         tools:layout="@layout/fragment_profil" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.eventcademyui.FavoriteFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
