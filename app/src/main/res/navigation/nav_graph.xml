@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.eventcademyui.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+
+    <fragment
         android:id="@+id/notificationFragment"
         android:name="com.example.eventcademyui.NotificationFragment"
         android:label="fragment_notification"
@@ -27,4 +33,5 @@
         android:name="com.example.eventcademyui.FavoriteFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+
 </navigation>

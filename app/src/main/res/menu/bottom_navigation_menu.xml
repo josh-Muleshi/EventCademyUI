@@ -5,7 +5,13 @@
         android:id="@+id/homeFragment"
         android:enabled="true"
         android:icon="@drawable/ic_home"
-        android:title="Home"/>
+        android:title="Accueil"/>
+
+    <item
+        android:id="@+id/favoriteFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favoris"/>
 
     <item
         android:id="@+id/notificationFragment"
@@ -15,12 +21,7 @@
     <item
         android:id="@+id/profilFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_person"
+        android:icon="@drawable/ic_profil"
         android:title="Profil"/>
 
-    <item
-        android:id="@+id/settingsFragment"
-        android:enabled="true"
-        android:icon="@drawable/ic_settings"
-        android:title="Settings"/>
 </menu>

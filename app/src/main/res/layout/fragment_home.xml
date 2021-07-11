@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search event..."
+            android:text="Recherche..."
             android:textSize="15dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="15dp"/>
@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:text="Categories"
+                android:text="Catégorie"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -146,7 +146,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="15dp"
-                android:text="Popular events"
+                android:text="Evénements"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
