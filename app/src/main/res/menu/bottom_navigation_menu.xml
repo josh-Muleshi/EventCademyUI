@@ -2,22 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/homeFragment"
         android:enabled="true"
         android:icon="@drawable/ic_home"
         android:title="Home"/>
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/favoriteFragment"
         android:enabled="true"
         android:icon="@drawable/ic_favorite"
         android:title="Favorite"/>
     <item
-        android:id="@+id/page_3"
+        android:id="@+id/notificationFragment"
         android:enabled="true"
         android:icon="@drawable/ic_notifications"
         android:title="Notifications"/>
     <item
-        android:id="@+id/page_4"
+        android:id="@+id/profilFragment"
         android:enabled="true"
         android:icon="@drawable/ic_person"
         android:title="Profil"/>
