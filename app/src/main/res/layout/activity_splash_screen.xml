@@ -7,22 +7,15 @@
     tools:context=".SplashScreenActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:foreground="@drawable/gradient"
-        android:scaleType="centerCrop"
-        android:src="@drawable/splashimg" />
-
-    <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
         android:scaleType="fitCenter"
         android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin_view"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
@@ -30,37 +23,45 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnLogin"
+    <LinearLayout
+        android:id="@+id/btnLogin_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        app:cornerRadius="16dp"
-        android:text="Se Connecter avec google"
         android:visibility="invisible"
-        app:backgroundTint="@android:color/white"
-        app:icon="@drawable/ic_google"
-        app:iconTint="@null"
-        app:iconGravity="textStart"
-        app:iconPadding="16dp"
-        android:textColor="#4285F5"
-        android:textAllCaps="false"
+        android:background="@drawable/btn_setting_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.8">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Se Connecter avec google"
+            android:background="@drawable/md_transparent"
+            app:icon="@drawable/ic_google"
+            app:iconTint="@null"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            android:textColor="@color/blue"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/progress"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:indeterminate="true"
+        android:indeterminateTint="@color/blue"
+        android:progressBackgroundTint="@color/blue"
         android:visibility="invisible"
-        android:indeterminateTint="@color/white"
-        android:progressBackgroundTint="@color/white"
-        android:progressTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        android:progressTint="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline" />
