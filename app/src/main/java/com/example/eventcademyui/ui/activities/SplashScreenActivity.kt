@@ -1,9 +1,10 @@
-package com.example.eventcademyui
+package com.example.eventcademyui.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
+import com.example.eventcademyui.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -19,7 +20,7 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun setUpSplash() {
         lifecycleScope.launch {
             delay(3000)
-            val intent = Intent(baseContext,MainActivity::class.java)
+            val intent = Intent(baseContext, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
