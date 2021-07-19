@@ -61,56 +61,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <LinearLayout
-            android:id="@+id/btn"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="24dp"
-            android:gravity="center"
-            android:orientation="horizontal"
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_settings"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="16dp"
-                android:background="@drawable/search_icon_back"
-                android:elevation="5dp"
-                android:gravity="center">
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="140dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/md_transparent"
-                    android:text="Modifier profil"
-                    android:textAllCaps="false"
-                    android:textSize="12sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="16dp"
-                android:background="@drawable/btn_setting_back"
-                android:gravity="center">
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="140dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/md_transparent"
-                    android:text="Paramètre"
-                    android:textAllCaps="false"
-                    android:textColor="@color/blue"
-                    android:textSize="12sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
