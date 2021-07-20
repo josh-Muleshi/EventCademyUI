@@ -1,165 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.HomeFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/home_top_view" />
-
-
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginHorizontal="19dp"
-        android:layout_marginTop="175dp"
-        android:layout_marginBottom="6dp"
-        android:background="@drawable/search_back"
-        android:elevation="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.HomeFragment">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Recherche..."
-            android:textSize="15dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="15dp"/>
+        <include
+            android:id="@+id/include"
+            layout="@layout/home_top_view" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/search_icon_back"
-            android:src="@drawable/ic_search"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:padding="4dp"
-            android:layout_margin="7dp"/>
 
-    </RelativeLayout>
-
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none"
-        android:layout_marginTop="26dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include">
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="15dp"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="19dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/search_back"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:text="Catégorie"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:text="Recherche..."
+                android:textSize="15dp" />
 
-            <HorizontalScrollView
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="7dp"
+                android:background="@drawable/search_icon_back"
+                android:padding="4dp"
+                android:src="@drawable/ic_search" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scrollbars="none">
+                android:orientation="vertical"
+                android:padding="15dp"
+                tools:ignore="MissingConstraints">
 
-                <com.google.android.material.chip.ChipGroup
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:singleLine="true"
-                    app:singleSelection="true">
+                    android:layout_marginBottom="15dp"
+                    android:text="Catégorie"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
-                        android:layout_width="100dp"
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:padding="12dp"
-                        android:text="Espacesis"
-                        android:textAlignment="center" />
+                        app:singleLine="true"
+                        app:singleSelection="true">
 
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:padding="12dp"
-                        android:text="GDG"
-                        android:textAlignment="center" />
+                        <com.google.android.material.chip.Chip
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="12dp"
+                            android:text="Espacesis"
+                            android:textAlignment="center" />
 
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:padding="12dp"
-                        android:text="DSC"
-                        android:textAlignment="center" />
+                        <com.google.android.material.chip.Chip
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="12dp"
+                            android:text="GDG"
+                            android:textAlignment="center" />
 
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:padding="12dp"
-                        android:text="Increa"
-                        android:textAlignment="center" />
+                        <com.google.android.material.chip.Chip
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="12dp"
+                            android:text="DSC"
+                            android:textAlignment="center" />
 
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:padding="12dp"
-                        android:text="WT"
-                        android:textAlignment="center" />
+                        <com.google.android.material.chip.Chip
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="12dp"
+                            android:text="Increa"
+                            android:textAlignment="center" />
 
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:padding="12dp"
-                        android:text="MLSA"
-                        android:textAlignment="center" />
+                        <com.google.android.material.chip.Chip
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="12dp"
+                            android:text="WT"
+                            android:textAlignment="center" />
 
-                </com.google.android.material.chip.ChipGroup>
+                        <com.google.android.material.chip.Chip
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="12dp"
+                            android:text="MLSA"
+                            android:textAlignment="center" />
 
-            </HorizontalScrollView>
+                    </com.google.android.material.chip.ChipGroup>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="15dp"
-                android:text="Evénements"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                </HorizontalScrollView>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="210dp"
-                android:layout_marginBottom="60dp"
-                tools:listitem="@layout/card_items" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:text="Evénements"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-        </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginBottom="60dp"
+                    tools:listitem="@layout/card_items" />
 
-    </ScrollView>
+            </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
