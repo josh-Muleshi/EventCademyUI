@@ -4,8 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.eventcademyui.R
+import com.example.eventcademyui.databinding.FragmentFavoriteBinding
+import com.example.eventcademyui.databinding.FragmentSettingsBinding
 
 class SettingsFragment : Fragment() {
 
@@ -15,8 +18,9 @@ class SettingsFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
 
-        val view: View = inflater.inflate(R.layout.fragment_settings, container, false)
-        return view
+        val binding : FragmentSettingsBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_settings, container, false)
+
+        return binding.root
     }
 
 }
