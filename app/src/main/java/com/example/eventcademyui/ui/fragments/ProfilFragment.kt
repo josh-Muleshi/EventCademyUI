@@ -1,11 +1,14 @@
 package com.example.eventcademyui.ui.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.eventcademyui.R
+import com.example.eventcademyui.databinding.FragmentProfilBinding
 
 class ProfilFragment : Fragment() {
 
@@ -14,6 +17,11 @@ class ProfilFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profil, container, false)
+        val binding : FragmentProfilBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_profil, container, false)
+
+        binding.settingBtn.setOnClickListener {
+            it.findNavController().navigate(R.id.action_profilFragment_to_settingsFragment)
+        }
+        return binding.root
     }
 }

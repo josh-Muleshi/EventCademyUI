@@ -19,12 +19,12 @@
 
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="com.example.eventcademyui.NotificationFragment"
+        android:name="com.example.eventcademyui.ui.fragments.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
     <fragment
         android:id="@+id/profilFragment"
-        android:name="com.example.eventcademyui.ProfilFragment"
+        android:name="com.example.eventcademyui.ui.fragments.ProfilFragment"
         android:label="fragment_profil"
         tools:layout="@layout/fragment_profil" >
         <action
@@ -34,7 +34,7 @@
 
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.eventcademyui.ui.fragments.FavoriteFragment"
+        android:name="com.example.eventcademyui.ui.fragments.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
 
