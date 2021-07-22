@@ -8,6 +8,15 @@
         android:layout_height="match_parent"
         tools:context=".ui.fragments.SettingsFragment">
 
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_navigate_before"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/Fragment_title"
             android:layout_width="wrap_content"
@@ -22,17 +31,135 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/compteTitle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:background="@color/sub_title_color"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
             android:text="Compte"
             android:textSize="16sp"
-            android:paddingStart="16dp"
-            android:gravity="center_vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Fragment_title" />
+
+        <TextView
+            android:id="@+id/language_change"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Changer la langue"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@drawable/setting_item_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/compteTitle"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_navigate_next"
+            app:layout_constraintEnd_toEndOf="@+id/language_change"
+            app:layout_constraintTop_toBottomOf="@+id/compteTitle" />
+
+        <TextView
+            android:id="@+id/dark_mode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Mode sombre"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/language_change"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_navigate_next"
+            app:layout_constraintEnd_toEndOf="@+id/dark_mode"
+            app:layout_constraintTop_toBottomOf="@+id/language_change" />
+
+        <TextView
+            android:id="@+id/elseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/sub_title_color"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Autres"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dark_mode" />
+
+        <TextView
+            android:id="@+id/confidentiality"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Politique de confidentialité"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@drawable/setting_item_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elseTitle"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_navigate_next"
+            app:layout_constraintEnd_toEndOf="@+id/confidentiality"
+            app:layout_constraintTop_toBottomOf="@+id/elseTitle" />
+
+        <TextView
+            android:id="@+id/termes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Termes et Conditions "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confidentiality"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_navigate_next"
+            app:layout_constraintEnd_toEndOf="@+id/termes"
+            app:layout_constraintTop_toBottomOf="@+id/confidentiality" />
+
+        <TextView
+            android:id="@+id/deconection"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Déconnexion"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:background="@drawable/setting_item_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/termes"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
