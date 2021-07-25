@@ -22,6 +22,10 @@ class ProfilFragment : Fragment() {
         binding.settingBtn.setOnClickListener {
             it.findNavController().navigate(R.id.action_profilFragment_to_settingsFragment)
         }
+
+        binding.txtProfilName.setOnClickListener {
+            it.findNavController().navigate(R.id.action_profilFragment_to_detailFragment)
+        }
         return binding.root
     }
 }

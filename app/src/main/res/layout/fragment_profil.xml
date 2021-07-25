@@ -34,7 +34,7 @@
             app:layout_constraintTop_toBottomOf="@+id/Fragment_title" />
 
         <TextView
-            android:id="@+id/txt_email"
+            android:id="@+id/txt_profil_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -47,7 +47,7 @@
             app:layout_constraintTop_toBottomOf="@id/profil_img" />
 
         <TextView
-            android:id="@+id/txt_profil_name"
+            android:id="@+id/txt_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -55,7 +55,7 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_profil_name" />
 
         <ImageButton
             android:id="@+id/setting_btn"

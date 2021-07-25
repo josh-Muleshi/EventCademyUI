@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_profilFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_profilFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
 
     <fragment
@@ -37,5 +40,9 @@
         android:name="com.example.eventcademyui.ui.fragments.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.eventcademyui.ui.fragments.DetailFragment"
+        android:label="DetailFragment" />
 
 </navigation>
