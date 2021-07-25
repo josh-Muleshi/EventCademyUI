@@ -12,7 +12,7 @@
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/ic_banner"
+            android:src="@drawable/img"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:text="title"
                 android:textColor="@color/black"
-                android:textSize="17dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -76,9 +76,43 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="subtitle"
-                android:textSize="15dp"
+                android:textSize="17dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/title_event" />
+                app:layout_constraintTop_toBottomOf="@+id/title_event"/>
+
+            <TextView
+                android:id="@+id/number_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="24"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sub_title_event" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="40dp"
+                android:text="personnes irons: "
+                android:textSize="17dp"
+                app:layout_constraintStart_toEndOf="@+id/number_follower"
+                app:layout_constraintTop_toBottomOf="@+id/sub_title_event" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Voir tous"
+                android:textSize="17dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sub_title_event" />
 
             <LinearLayout
                 android:id="@+id/btnScribe_view"
@@ -99,8 +133,97 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/time_ic"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/event_time_back"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/number_follower">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_baseline_schedule_24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="45dp"
+                android:text="25 Juillet, 2021"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@+id/time_ic"
+                app:layout_constraintTop_toBottomOf="@+id/number_follower" />
+
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="8:00 - 10:00 AM"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/time_ic"
+                app:layout_constraintTop_toBottomOf="@+id/date_txt" />
+
+            <LinearLayout
+                android:id="@+id/adress_ic"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/event_time_back"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/time_ic">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_location" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/city_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:text="Lubumbashi, Congo"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@+id/adress_ic"
+                app:layout_constraintTop_toBottomOf="@+id/time_ic" />
+
+            <TextView
+                android:id="@+id/adress_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="05, Femme Katangaise"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/adress_ic"
+                app:layout_constraintTop_toBottomOf="@+id/city_txt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Commentaire"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adress_ic" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
