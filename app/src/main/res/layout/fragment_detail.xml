@@ -104,6 +104,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/sub_title_event" />
 
             <TextView
+                android:id="@+id/viewAll_user"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
@@ -174,6 +175,22 @@
                 app:layout_constraintTop_toBottomOf="@+id/date_txt" />
 
             <LinearLayout
+                android:id="@+id/add_calendar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/calendar_back"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewAll_user">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_calendar" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/adress_ic"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
@@ -212,6 +229,21 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/adress_ic"
                 app:layout_constraintTop_toBottomOf="@+id/city_txt" />
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/calendar_back"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_calendar">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_send" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/comment_title_txt"
